@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Synapse Grid</title>
+  <meta name="description" content="Explore all Synapse Grid services: property management, parent care, errands, legal support, travel, and premium concierge." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark"><span>SG</span></div>
+      <span class="logo-text">Synapse<span>Grid</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-icon sun"><i class="fa-solid fa-sun"></i></span>
+        <span class="toggle-icon moon"><i class="fa-solid fa-moon"></i></span>
+      </button>
+      <a href="contact.html" class="btn-nav">Get Started</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="section-label animate-fade-up">What We Offer</div>
+    <h1 class="animate-fade-up-delay-1" style="max-width:600px">Services Crafted for <em style="font-style:italic;color:var(--accent)">Every NRI Need</em></h1>
+    <p class="animate-fade-up-delay-2" style="max-width:520px;margin-top:1rem;font-size:1.05rem">Whether it's your ancestral property, aging parents, or important documents — Synapse Grid has a solution built for you.</p>
+  </div>
+</section>
+
+<!-- SERVICES INTRO TABS -->
+<section class="section-sm" style="background:var(--bg-secondary);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
+      <a href="#property" style="padding:0.5rem 1.25rem;border:1px solid var(--border-strong);border-radius:20px;font-size:0.82rem;color:var(--text-secondary);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border-strong)';this.style.color='var(--text-secondary)'"><i class="fa-solid fa-house"></i> Property</a>
+      <a href="#parent" style="padding:0.5rem 1.25rem;border:1px solid var(--border-strong);border-radius:20px;font-size:0.82rem;color:var(--text-secondary);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border-strong)';this.style.color='var(--text-secondary)'"><i class="fa-solid fa-people-roof"></i> Parent Care</a>
+      <a href="#errands" style="padding:0.5rem 1.25rem;border:1px solid var(--border-strong);border-radius:20px;font-size:0.82rem;color:var(--text-secondary);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border-strong)';this.style.color='var(--text-secondary)'"><i class="fa-solid fa-bag-shopping"></i> Errands</a>
+      <a href="#legal" style="padding:0.5rem 1.25rem;border:1px solid var(--border-strong);border-radius:20px;font-size:0.82rem;color:var(--text-secondary);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border-strong)';this.style.color='var(--text-secondary)'"><i class="fa-solid fa-file-lines"></i> Legal</a>
+      <a href="#travel" style="padding:0.5rem 1.25rem;border:1px solid var(--border-strong);border-radius:20px;font-size:0.82rem;color:var(--text-secondary);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border-strong)';this.style.color='var(--text-secondary)'"><i class="fa-solid fa-plane"></i> Travel</a>
+      <a href="#premium" style="padding:0.5rem 1.25rem;border:1px solid var(--accent);border-radius:20px;font-size:0.82rem;color:var(--accent);background:rgba(181,129,58,0.08);transition:all 0.2s ease"><i class="fa-solid fa-crown"></i> Premium</a>
+    </div>
+  </div>
+</section>
+
+<!-- ALL SERVICES -->
+<section class="section">
+  <div class="container">
+    <div class="services-full-grid">
+
+      <!-- Property -->
+      <div class="service-full-card reveal" id="property">
+        <div class="service-icon" style="margin-bottom:1.25rem"><i class="fa-solid fa-house"></i></div>
+        <div class="section-label" style="margin-bottom:0.5rem">Service 01</div>
+        <h3>Property Services</h3>
+        <div class="divider"></div>
+        <p>Your Indian property deserves expert care even when you're thousands of miles away. We manage every aspect of property ownership — from tenants to maintenance to legal compliance.</p>
+        <ul class="service-features">
+          <li>Rent collection & tenant management with monthly reports</li>
+          <li>Property inspections with photo/video documentation</li>
+          <li>Maintenance & repair coordination with trusted vendors</li>
+          <li>Property tax payments and municipal compliance</li>
+          <li>Vacant property monitoring & caretaker services</li>
+          <li>Property sale/purchase assistance and legal verification</li>
+        </ul>
+        <a href="contact.html" class="btn-primary" style="margin-top:1.75rem;width:fit-content">Enquire Now →</a>
+      </div>
+
+      <!-- Parent Care -->
+      <div class="service-full-card reveal reveal-delay-1" id="parent">
+        <div class="service-icon" style="margin-bottom:1.25rem"><i class="fa-solid fa-people-roof"></i></div>
+        <div class="section-label" style="margin-bottom:0.5rem">Service 02</div>
+        <h3>Parent Care Services</h3>
+        <div class="divider"></div>
+        <p>Give your parents the attentive, compassionate care they deserve. Our caregivers are trained, verified, and treat your family like their own — keeping you informed every step of the way.</p>
+        <ul class="service-features">
+          <li>Dedicated in-home companionship and daily wellness checks</li>
+          <li>Doctor visits, prescription pickups & health coordination</li>
+          <li>Emergency response — we're there within the hour</li>
+          <li>Weekly video call setup and tech assistance for elders</li>
+          <li>Festival and birthday celebrations, gifts and surprises</li>
+          <li>Hospital admission support and discharge planning</li>
+        </ul>
+        <a href="contact.html" class="btn-primary" style="margin-top:1.75rem;width:fit-content">Enquire Now →</a>
+      </div>
+
+      <!-- Errands -->
+      <div class="service-full-card reveal" id="errands">
+        <div class="service-icon" style="margin-bottom:1.25rem"><i class="fa-solid fa-bag-shopping"></i></div>
+        <div class="section-label" style="margin-bottom:0.5rem">Service 03</div>
+        <h3>Shopping & Errand Services</h3>
+        <div class="divider"></div>
+        <p>Every day tasks in India — from grocery runs to bill payments — handled by our trusted local team. Just tell us what you need done and consider it done.</p>
+        <ul class="service-features">
+          <li>Grocery, medicine and household supply procurement</li>
+          <li>Utility bill payments, internet, and DTH recharges</li>
+          <li>Gift sourcing and delivery for family occasions</li>
+          <li>Festival item shopping and pooja arrangements</li>
+          <li>Bank visits and financial institution errands</li>
+          <li>Package pickup, courier dispatch and delivery tracking</li>
+        </ul>
+        <a href="contact.html" class="btn-primary" style="margin-top:1.75rem;width:fit-content">Enquire Now →</a>
+      </div>
+
+      <!-- Legal -->
+      <div class="service-full-card reveal reveal-delay-1" id="legal">
+        <div class="service-icon" style="margin-bottom:1.25rem"><i class="fa-solid fa-file-lines"></i></div>
+        <div class="section-label" style="margin-bottom:0.5rem">Service 04</div>
+        <h3>Legal & Documentation Help</h3>
+        <div class="divider"></div>
+        <p>Navigating Indian bureaucracy from overseas is notoriously difficult. Our legal partners and documentation experts cut through the complexity for you with precision and speed.</p>
+        <ul class="service-features">
+          <li>Passport renewal and Tatkal application assistance</li>
+          <li>OCI card applications and status follow-up</li>
+          <li>Power of attorney drafting, notarization and registration</li>
+          <li>Property title verification and encumbrance certificates</li>
+          <li>Court liaisoning and affidavit processing</li>
+          <li>PAN, Aadhaar, and NRI banking documentation</li>
+        </ul>
+        <a href="contact.html" class="btn-primary" style="margin-top:1.75rem;width:fit-content">Enquire Now →</a>
+      </div>
+
+      <!-- Travel -->
+      <div class="service-full-card reveal" id="travel">
+        <div class="service-icon" style="margin-bottom:1.25rem"><i class="fa-solid fa-plane"></i></div>
+        <div class="section-label" style="margin-bottom:0.5rem">Service 05</div>
+        <h3>Travel & Relocation Support</h3>
+        <div class="divider"></div>
+        <p>Whether you're visiting India for a short trip or relocating back permanently, Synapse Grid ensures every detail is arranged — from the moment your flight lands to settling in.</p>
+        <ul class="service-features">
+          <li>Airport pick-up and drop service, any time of day</li>
+          <li>Hotel, serviced apartment and guest house bookings</li>
+          <li>Domestic travel planning — trains, flights, road trips</li>
+          <li>SIM card, internet setup and local orientation</li>
+          <li>Relocation assistance — home finding, movers, school admissions</li>
+          <li>Meet & greet services for elderly parents or children traveling alone</li>
+        </ul>
+        <a href="contact.html" class="btn-primary" style="margin-top:1.75rem;width:fit-content">Enquire Now →</a>
+      </div>
+
+      <!-- Premium - full width -->
+      <div class="service-full-card premium reveal" id="premium">
+        <div class="premium-badge"><i class="fa-solid fa-crown"></i> Premium</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start">
+          <div>
+            <div class="section-label" style="margin-bottom:0.5rem">Service 06</div>
+            <h3>Premium Concierge Service</h3>
+            <div class="divider"></div>
+            <p>Our flagship offering. A single, dedicated relationship manager who knows your family, anticipates your needs, and handles everything with white-glove attention.</p>
+            <p style="margin-top:1rem">This isn't just a service — it's a lifelong partnership with a professional who treats your family like their own responsibility.</p>
+            <a href="contact.html" class="btn-primary" style="margin-top:2rem;width:fit-content">Join Premium →</a>
+          </div>
+          <div>
+            <ul class="service-features" style="margin-top:0">
+              <li>Dedicated named relationship manager, available 7 days</li>
+              <li>All services included — property, care, legal, errands, travel</li>
+              <li>Monthly comprehensive India-life status report</li>
+              <li>Priority emergency response — 60 minute guarantee</li>
+              <li>Personalised care plan reviewed and updated quarterly</li>
+              <li>24/7 WhatsApp and phone access to your manager</li>
+              <li>Festival, anniversary and birthday coordination</li>
+              <li>Annual in-person review meeting with your family</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--bg-secondary);padding:5rem 0;border-top:1px solid var(--border)">
+  <div class="container text-center reveal">
+    <h2>Not sure which service you need?</h2>
+    <p style="max-width:480px;margin:1rem auto 2rem">Talk to us — we'll help you figure out the right plan for your family's unique situation.</p>
+    <a href="contact.html" class="btn-primary">Book a Free Consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark"><span>SG</span></div>
+          <span class="logo-text">Synapse<span>Grid</span></span>
+        </a>
+        <p>Your trusted support network in India. We bridge the distance between you and everything that matters at home.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#property">Property Services</a></li>
+          <li><a href="#parent">Parent Care</a></li>
+          <li><a href="#errands">Shopping & Errands</a></li>
+          <li><a href="#legal">Legal & Docs</a></li>
+          <li><a href="#travel">Travel & Relocation</a></li>
+          <li><a href="#premium">Premium Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@synapsegrid.in">hello@synapsegrid.in</a></li>
+          <li><a href="tel:+918000000000">+91 80000 00000</a></li>
+          <li><a href="#">Pune, Maharashtra</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Synapse Grid. All rights reserved.</span>
+      <span class="mono" style="font-size:0.7rem">Designed for the diaspora</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

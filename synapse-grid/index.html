@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synapse Grid — NRI Support Services</title>
+  <meta name="description" content="Synapse Grid connects the Indian diaspora with trusted, expert support for property, parent care, legal, travel, and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+</head>
+<body>
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-mark"><span>SG</span></div>
+      <span class="logo-text">Synapse<span>Grid</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-icon sun"><i class="fa-solid fa-sun"></i></span>
+        <span class="toggle-icon moon"><i class="fa-solid fa-moon"></i></span>
+      </button>
+      <a href="contact.html" class="btn-nav">Get Started</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+  <a href="feedback.html">Feedback</a>
+  <a href="contact.html" class="btn-primary" style="width:fit-content">Get Started</a>
+</div>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag animate-fade-up">
+          <span class="dot"></span>
+          Trusted by 2,000+ NRI families
+        </div>
+        <h1 class="hero-title animate-fade-up-delay-1">
+          Your Bridge<br/>Between<br/><em>Worlds</em>
+        </h1>
+        <p class="hero-desc animate-fade-up-delay-2">
+          Synapse Grid is your trusted partner in India — handling property, parent care, legal matters, and life's essentials while you build your future abroad.
+        </p>
+        <div class="hero-cta animate-fade-up-delay-3">
+          <a href="services.html" class="btn-primary">Explore Services →</a>
+          <a href="about.html" class="btn-outline">Our Story</a>
+        </div>
+        <div class="hero-stats animate-fade-up-delay-3">
+          <div class="stat-item">
+            <div class="stat-num">2K+</div>
+            <div class="stat-label">Families Served</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">18+</div>
+            <div class="stat-label">Cities in India</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">98%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual animate-fade-up-delay-2">
+        <div class="hero-globe">
+          <!-- Outer rotating ring -->
+          <div class="orbit-ring orbit-ring-1">
+            <div class="orbit-node" style="--angle:0deg"><span class="flag-node"><span class="fi fi-gb"></span></span></div>
+            <div class="orbit-node" style="--angle:72deg"><span class="flag-node"><span class="fi fi-ca"></span></span></div>
+            <div class="orbit-node" style="--angle:144deg"><span class="flag-node"><span class="fi fi-ae"></span></span></div>
+            <div class="orbit-node" style="--angle:216deg"><span class="flag-node"><span class="fi fi-au"></span></span></div>
+            <div class="orbit-node" style="--angle:288deg"><span class="flag-node"><span class="fi fi-de"></span></span></div>
+          </div>
+          <!-- Middle rotating ring -->
+          <div class="orbit-ring orbit-ring-2">
+            <div class="orbit-node" style="--angle:0deg"><span class="flag-node"><span class="fi fi-us"></span></span></div>
+            <div class="orbit-node" style="--angle:90deg"><span class="flag-node"><span class="fi fi-sg"></span></span></div>
+            <div class="orbit-node" style="--angle:180deg"><span class="flag-node"><span class="fi fi-nz"></span></span></div>
+            <div class="orbit-node" style="--angle:270deg"><span class="flag-node"><span class="fi fi-nl"></span></span></div>
+          </div>
+          <!-- Globe core -->
+          <div class="globe-inner">
+            <div class="globe-text">
+              <span class="globe-from">India</span>
+              <span class="globe-arrow">→</span>
+              <span class="globe-to-wrap">
+                <span class="globe-to" id="globeTo">World</span>
+              </span>
+            </div>
+          </div>
+          <!-- Pulse rings -->
+          <div class="globe-pulse"></div>
+          <div class="globe-pulse globe-pulse-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ SERVICES PREVIEW ═══════════════ -->
+<section class="section" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label" style="justify-content:center">What We Do</div>
+      <h2>Services Built for the <em style="font-style:italic;color:var(--accent)">Indian Diaspora</em></h2>
+      <p style="max-width:540px;margin:1rem auto 3rem">From managing your ancestral home to caring for your aging parents — we handle it all, so distance is never a barrier.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-house"></i></div>
+        <h4>Property Services</h4>
+        <p>Rent collection, maintenance coordination, legal verification, and complete property management across India.</p>
+        <a href="services.html#property" class="card-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-people-roof"></i></div>
+        <h4>Parent Care Services</h4>
+        <p>Dedicated caregivers, health check-ups, emergency response, and daily wellness monitoring for your loved ones.</p>
+        <a href="services.html#parent" class="card-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+        <h4>Shopping & Errands</h4>
+        <p>Groceries, medicines, gifts, bill payments — trusted runners handling everyday tasks with care.</p>
+        <a href="services.html#errands" class="card-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <h4>Legal & Documentation</h4>
+        <p>Passport renewals, OCI assistance, power of attorney, notarization, and all documentation support.</p>
+        <a href="services.html#legal" class="card-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><i class="fa-solid fa-plane"></i></div>
+        <h4>Travel & Relocation</h4>
+        <p>Airport pick-up, hotel bookings, domestic travel planning, and full relocation coordination in India.</p>
+        <a href="services.html#travel" class="card-link">Learn more →</a>
+      </div>
+      <div class="service-card reveal reveal-delay-3" style="background:linear-gradient(135deg, var(--bg-card), rgba(181,129,58,0.06)); border-color:var(--border-strong)">
+        <div class="service-icon" style="background:rgba(181,129,58,0.2)"><i class="fa-solid fa-crown"></i></div>
+        <h4>Premium Service</h4>
+        <p>A dedicated relationship manager, 24/7 priority access, and a fully customised care plan — just for you.</p>
+        <a href="services.html#premium" class="card-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WHY US ═══════════════ -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+      <div class="reveal">
+        <div class="section-label">Why Synapse Grid</div>
+        <h2>Peace of Mind, <em style="font-style:italic;color:var(--accent)">From Any Distance</em></h2>
+        <div class="divider"></div>
+        <p>We understand the anxiety of being thousands of miles away from family and home. Our network of verified professionals ensures nothing falls through the cracks — ever.</p>
+        <a href="about.html" class="btn-primary" style="margin-top:2rem">Meet the Team</a>
+      </div>
+      <div class="why-grid reveal reveal-delay-1">
+        <div class="why-item">
+          <div class="why-num">01</div>
+          <div>
+            <h4>Verified Professionals</h4>
+            <p style="font-size:0.85rem">Every partner is background-checked and reference-verified.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">02</div>
+          <div>
+            <h4>Real-Time Updates</h4>
+            <p style="font-size:0.85rem">Photos, reports, and status updates delivered to you directly.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">03</div>
+          <div>
+            <h4>Pan-India Network</h4>
+            <p style="font-size:0.85rem">Coverage across 18+ cities and growing rapidly.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-num">04</div>
+          <div>
+            <h4>Transparent Pricing</h4>
+            <p style="font-size:0.85rem">No hidden fees. Clear invoices for every service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CTA BANNER ═══════════════ -->
+<section style="background:var(--accent);padding:5rem 0;">
+  <div class="container text-center reveal">
+    <p class="mono" style="color:rgba(255,255,255,0.7);margin-bottom:1rem">Start Today</p>
+    <h2 style="color:#fff;margin-bottom:1.25rem">Ready to stop worrying<br/>about back home?</h2>
+    <p style="color:rgba(255,255,255,0.8);max-width:480px;margin:0 auto 2.5rem">Join thousands of NRI families who trust Synapse Grid to keep their India life running smoothly.</p>
+    <a href="contact.html" class="btn-outline" style="border-color:#fff;color:#fff">Get a Free Consultation</a>
+  </div>
+</section>
+
+<!-- ═══════════════ TESTIMONIALS SNIPPET ═══════════════ -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label" style="justify-content:center">Testimonials</div>
+      <h2>Families Who Trust Us</h2>
+      <p style="max-width:480px;margin:0.75rem auto 3rem">Real stories from real NRI families around the world.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+      <div class="feedback-card reveal reveal-delay-1">
+        <div class="feedback-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="feedback-text">"Synapse Grid manages my parents' daily needs in Pune. The peace of mind is priceless. I can now focus on my work in London without constant worry."</p>
+        <div class="feedback-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <div class="author-name">Rajan Mehta</div>
+            <div class="author-loc">London, UK</div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback-card reveal reveal-delay-2">
+        <div class="feedback-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="feedback-text">"They handled the entire property sale and legal paperwork while I was in Toronto. Everything was smooth, transparent and on time."</p>
+        <div class="feedback-author">
+          <div class="author-avatar">P</div>
+          <div>
+            <div class="author-name">Priya Nair</div>
+            <div class="author-loc">Toronto, Canada</div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback-card reveal reveal-delay-3">
+        <div class="feedback-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="feedback-text">"When my father had a health emergency, the Synapse Grid team was there within the hour. I can't thank them enough for that response."</p>
+        <div class="feedback-author">
+          <div class="author-avatar">A</div>
+          <div>
+            <div class="author-name">Amit Sharma</div>
+            <div class="author-loc">Dubai, UAE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:2.5rem">
+      <a href="feedback.html" class="btn-outline">View All Feedback →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark"><span>SG</span></div>
+          <span class="logo-text">Synapse<span>Grid</span></span>
+        </a>
+        <p>Your trusted support network in India. We bridge the distance between you and everything that matters at home.</p>
+        <div style="display:flex;gap:0.75rem;margin-top:1.5rem">
+          <a href="#" style="width:34px;height:34px;border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:var(--text-muted);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">in</a>
+          <a href="#" style="width:34px;height:34px;border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:var(--text-muted);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">tw</a>
+          <a href="#" style="width:34px;height:34px;border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:var(--text-muted);transition:all 0.2s ease" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#property">Property Services</a></li>
+          <li><a href="services.html#parent">Parent Care</a></li>
+          <li><a href="services.html#errands">Shopping & Errands</a></li>
+          <li><a href="services.html#legal">Legal & Docs</a></li>
+          <li><a href="services.html#travel">Travel & Relocation</a></li>
+          <li><a href="services.html#premium">Premium Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@synapsegrid.in">hello@synapsegrid.in</a></li>
+          <li><a href="tel:+918000000000">+91 80000 00000</a></li>
+          <li><a href="#">Pune, Maharashtra</a></li>
+          <li><a href="#">Mon–Sat, 9am–7pm IST</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Synapse Grid. All rights reserved.</span>
+      <span class="mono" style="font-size:0.7rem">Designed for the diaspora</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Globe "India → X" cycling animation
+  var destinations = ['World','London','Toronto','Dubai','New York','Singapore','Sydney','Frankfurt'];
+  var idx = 0;
+  var el = document.getElementById('globeTo');
+  setInterval(function() {
+    el.classList.add('fade-out');
+    setTimeout(function() {
+      idx = (idx + 1) % destinations.length;
+      el.textContent = destinations[idx];
+      el.classList.remove('fade-out');
+    }, 350);
+  }, 2000);
+
+  // Keep all flag nodes upright by counter-rotating against their parent ring
+  function getRotationDeg(el) {
+    var st = window.getComputedStyle(el);
+    var tr = st.transform;
+    if (!tr || tr === 'none') return 0;
+    var m = tr.match(/matrix\(([^)]+)\)/);
+    if (!m) return 0;
+    var vals = m[1].split(',');
+    var a = parseFloat(vals[0]);
+    var b = parseFloat(vals[1]);
+    return Math.round(Math.atan2(b, a) * (180 / Math.PI));
+  }
+
+  function keepLabelsUpright() {
+    document.querySelectorAll('.orbit-ring').forEach(function(ring) {
+      var ringDeg = getRotationDeg(ring);
+      ring.querySelectorAll('.flag-node').forEach(function(flag) {
+        flag.style.transform = 'rotate(' + (-ringDeg) + 'deg)';
+      });
+    });
+    requestAnimationFrame(keepLabelsUpright);
+  }
+  requestAnimationFrame(keepLabelsUpright);
+</script>
+</body>
+</html>
