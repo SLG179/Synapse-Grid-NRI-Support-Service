@@ -1,50 +1,51 @@
 /* ============================================================
-   SYNAPSE GRID — Global Stylesheet
+   SYNAPSE GRID â€” Global Stylesheet
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
-/* ─── CSS Variables ─────────────────────────────────────── */
+/* â”€â”€â”€ CSS Variables â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 :root {
-  /* Light Theme */
-  --bg-primary: #f5f2ec;
-  --bg-secondary: #ede9e1;
+  /* Light Theme â€” White & Soft Blue Minimal */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #eef2f7;
   --bg-card: #ffffff;
-  --bg-nav: rgba(245, 242, 236, 0.92);
-  --text-primary: #1a1714;
-  --text-secondary: #4a4540;
-  --text-muted: #8a8078;
-  --accent: #b5813a;
-  --accent-light: #d4a85c;
-  --accent-dark: #8a5e22;
-  --border: rgba(181, 129, 58, 0.18);
-  --border-strong: rgba(181, 129, 58, 0.4);
-  --shadow: 0 4px 32px rgba(26, 23, 20, 0.08);
-  --shadow-card: 0 2px 20px rgba(26, 23, 20, 0.06);
-  --gradient-hero: linear-gradient(135deg, #f5f2ec 0%, #ede9e1 50%, #e4ddd3 100%);
-  --overlay: rgba(245, 242, 236, 0.7);
+  --bg-nav: rgba(248, 250, 252, 0.92);
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #94a3b8;
+  --accent: #3b82f6;
+  --accent-light: #60a5fa;
+  --accent-dark: #1d4ed8;
+  --border: rgba(59, 130, 246, 0.12);
+  --border-strong: rgba(59, 130, 246, 0.28);
+  --shadow: 0 4px 32px rgba(15, 23, 42, 0.08);
+  --shadow-card: 0 2px 16px rgba(15, 23, 42, 0.05);
+  --gradient-hero: linear-gradient(135deg, #f8fafc 0%, #eef2f7 50%, #e2eaf4 100%);
+  --overlay: rgba(248, 250, 252, 0.7);
 }
 
 [data-theme="dark"] {
-  --bg-primary: #0f0e0c;
-  --bg-secondary: #1a1814;
-  --bg-card: #1e1c18;
-  --bg-nav: rgba(15, 14, 12, 0.94);
-  --text-primary: #f0ece4;
-  --text-secondary: #c8c0b0;
-  --text-muted: #7a7268;
-  --accent: #c9933d;
-  --accent-light: #e0aa55;
-  --accent-dark: #a07028;
-  --border: rgba(201, 147, 61, 0.15);
-  --border-strong: rgba(201, 147, 61, 0.35);
-  --shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
-  --shadow-card: 0 2px 20px rgba(0, 0, 0, 0.3);
-  --gradient-hero: linear-gradient(135deg, #0f0e0c 0%, #1a1814 50%, #211e18 100%);
-  --overlay: rgba(15, 14, 12, 0.7);
+  /* Dark Theme â€” Deep Navy Minimal */
+  --bg-primary: #0a0f1e;
+  --bg-secondary: #0f172a;
+  --bg-card: #131c30;
+  --bg-nav: rgba(10, 15, 30, 0.94);
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #475569;
+  --accent: #60a5fa;
+  --accent-light: #93c5fd;
+  --accent-dark: #3b82f6;
+  --border: rgba(96, 165, 250, 0.12);
+  --border-strong: rgba(96, 165, 250, 0.28);
+  --shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.35);
+  --gradient-hero: linear-gradient(135deg, #0a0f1e 0%, #0f172a 50%, #131c30 100%);
+  --overlay: rgba(10, 15, 30, 0.7);
 }
 
-/* ─── Reset & Base ───────────────────────────────────────── */
+/* â”€â”€â”€ Reset & Base â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; font-size: 16px; }
@@ -63,7 +64,7 @@ a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: inherit; }
 
-/* ─── Typography ─────────────────────────────────────────── */
+/* â”€â”€â”€ Typography â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 h1, h2, h3, h4 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
@@ -80,12 +81,12 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
 
 .mono { font-family: 'Space Mono', monospace; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
 
-/* ─── Layout ─────────────────────────────────────────────── */
+/* â”€â”€â”€ Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .container { max-width: 1180px; margin: 0 auto; padding: 0 2rem; }
 .section { padding: 6rem 0; }
 .section-sm { padding: 3rem 0; }
 
-/* ─── Navbar ─────────────────────────────────────────────── */
+/* â”€â”€â”€ Navbar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   background: var(--bg-nav);
@@ -202,11 +203,11 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
   color: #fff;
 }
 
-/* light mode → show sun (left), hide moon */
+/* light mode â†’ show sun (left), hide moon */
 [data-theme="light"] .theme-toggle .sun  { opacity: 1; }
 [data-theme="light"] .theme-toggle .moon { opacity: 0; }
 
-/* dark mode → hide sun, show moon (right) */
+/* dark mode â†’ hide sun, show moon (right) */
 [data-theme="dark"] .theme-toggle .sun  { opacity: 0; }
 [data-theme="dark"] .theme-toggle .moon { opacity: 1; }
 
@@ -250,7 +251,7 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
 .mobile-menu a { font-size: 1rem; font-weight: 500; color: var(--text-secondary); }
 .mobile-menu a:hover { color: var(--accent); }
 
-/* ─── Buttons ─────────────────────────────────────────────── */
+/* â”€â”€â”€ Buttons â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .btn-primary {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.875rem 2rem;
@@ -265,7 +266,7 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
   background: var(--accent-light);
   border-color: var(--accent-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(181, 129, 58, 0.3);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);
 }
 
 .btn-outline {
@@ -284,7 +285,7 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
   transform: translateY(-2px);
 }
 
-/* ─── Section Labels ─────────────────────────────────────── */
+/* â”€â”€â”€ Section Labels â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .section-label {
   display: inline-flex; align-items: center; gap: 0.6rem;
   font-family: 'Space Mono', monospace;
@@ -297,7 +298,7 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
   width: 28px; height: 1px; background: var(--accent);
 }
 
-/* ─── Cards ───────────────────────────────────────────────── */
+/* â”€â”€â”€ Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -312,14 +313,14 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
   box-shadow: var(--shadow);
 }
 
-/* ─── Divider ─────────────────────────────────────────────── */
+/* â”€â”€â”€ Divider â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .divider {
   width: 60px; height: 2px;
   background: var(--accent);
   margin: 1.25rem 0 1.75rem;
 }
 
-/* ─── Page Hero ───────────────────────────────────────────── */
+/* â”€â”€â”€ Page Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .page-hero {
   padding: 9rem 0 5rem;
   background: var(--gradient-hero);
@@ -328,12 +329,12 @@ p { font-size: 1rem; color: var(--text-secondary); line-height: 1.75; }
 .page-hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b5813a' fill-opacity='0.04'%3E%3Cpath d='M40 0L80 20v40L40 80 0 60V20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+  background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233b82f6' fill-opacity='0.04'%3E%3Cpath d='M40 0L80 20v40L40 80 0 60V20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
   opacity: 0.6;
 }
 .page-hero .container { position: relative; z-index: 1; }
 
-/* ─── Footer ──────────────────────────────────────────────── */
+/* â”€â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
@@ -369,7 +370,7 @@ footer {
   font-size: 0.8rem; color: var(--text-muted);
 }
 
-/* ─── Utilities ───────────────────────────────────────────── */
+/* â”€â”€â”€ Utilities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .text-accent { color: var(--accent); }
 .text-muted { color: var(--text-muted); }
 .text-center { text-align: center; }
@@ -382,7 +383,7 @@ footer {
 .gap-1 { gap: 0.5rem; }
 .gap-2 { gap: 1rem; }
 
-/* ─── Animations ──────────────────────────────────────────── */
+/* â”€â”€â”€ Animations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
@@ -392,7 +393,7 @@ footer {
   to { opacity: 1; }
 }
 @keyframes pulse-gold {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(181, 129, 58, 0.3); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.25); }
   50% { box-shadow: 0 0 0 12px rgba(181, 129, 58, 0); }
 }
 
@@ -401,7 +402,7 @@ footer {
 .animate-fade-up-delay-2 { animation: fadeUp 0.7s 0.3s ease both; }
 .animate-fade-up-delay-3 { animation: fadeUp 0.7s 0.45s ease both; }
 
-/* ─── Responsive ──────────────────────────────────────────── */
+/* â”€â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 900px) {
   .nav-links, .btn-nav { display: none; }
   .hamburger { display: flex; }

@@ -1,8 +1,8 @@
 /* ============================================================
-   SYNAPSE GRID — Reveal Animations & Page-Specific Styles
+   SYNAPSE GRID â€” Reveal Animations & Page-Specific Styles
    ============================================================ */
 
-/* ─── Scroll Reveal ─────────────────────────────────────── */
+/* â”€â”€â”€ Scroll Reveal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -17,7 +17,7 @@
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* ─── HOME — Hero ────────────────────────────────────────── */
+/* â”€â”€â”€ HOME â€” Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero {
   min-height: 100vh;
   display: flex; align-items: center;
@@ -30,8 +30,8 @@
   content: '';
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(181,129,58,0.08) 0%, transparent 60%),
-    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23b5813a' fill-opacity='0.035'%3E%3Cpath d='M40 0L80 20v40L40 80 0 60V20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(59,130,246,0.08) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%233b82f6' fill-opacity='0.035'%3E%3Cpath d='M40 0L80 20v40L40 80 0 60V20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
   pointer-events: none;
 }
 
@@ -50,7 +50,7 @@
   padding: 0.4rem 1rem;
   border: 1px solid var(--border-strong);
   border-radius: 20px;
-  background: rgba(181, 129, 58, 0.06);
+  background: rgba(59, 130, 246, 0.06);
 }
 .hero-tag .dot {
   width: 6px; height: 6px; border-radius: 50%;
@@ -123,7 +123,7 @@
 .orbit-ring {
   position: absolute;
   border-radius: 50%;
-  border: 1px dashed rgba(181,129,58,0.35);
+  border: 1px dashed rgba(59,130,246,0.25);
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -183,7 +183,7 @@
   width: 240px; height: 240px; border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, var(--accent-light), var(--accent-dark));
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 0 60px rgba(181, 129, 58, 0.3), inset 0 0 40px rgba(0,0,0,0.2);
+  box-shadow: 0 0 60px rgba(59, 130, 246, 0.25), inset 0 0 40px rgba(0,0,0,0.2);
   z-index: 2;
   position: relative;
 }
@@ -219,7 +219,7 @@
   transform: translateY(6px);
 }
 
-/* ─── HOME — Services Preview ─────────────────────────────── */
+/* â”€â”€â”€ HOME â€” Services Preview â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .services-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
@@ -250,7 +250,7 @@
 
 .service-icon {
   width: 48px; height: 48px;
-  background: rgba(181, 129, 58, 0.1);
+  background: rgba(59, 130, 246, 0.08);
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.5rem;
@@ -272,7 +272,7 @@
 }
 .service-card:hover .card-link { gap: 0.6rem; }
 
-/* ─── HOME — Why Choose Us ─────────────────────────────────── */
+/* â”€â”€â”€ HOME â€” Why Choose Us â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .why-grid {
   display: grid; grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -298,7 +298,7 @@
 .why-item h4 { margin-bottom: 0.4rem; }
 .why-item p { font-size: 0.875rem; }
 
-/* ─── SERVICES PAGE ─────────────────────────────────────────── */
+/* â”€â”€â”€ SERVICES PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .services-full-grid {
   display: grid; grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -328,18 +328,20 @@
 
 .service-full-card.premium {
   grid-column: 1 / -1;
-  background: linear-gradient(135deg, var(--bg-card) 60%, rgba(181,129,58,0.06));
-  border-color: var(--border-strong);
+  background: linear-gradient(135deg, var(--bg-card) 50%, rgba(212,175,55,0.08));
+  border-color: rgba(212,175,55,0.45);
+  box-shadow: 0 4px 32px rgba(212,175,55,0.1);
 }
 .premium-badge {
   display: inline-flex; align-items: center; gap: 0.4rem;
   font-family: 'Space Mono', monospace;
   font-size: 0.65rem; letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #fff;
-  background: var(--accent);
+  color: #1a1200;
+  background: linear-gradient(135deg, #d4af37, #f0c040);
   padding: 0.3rem 0.75rem; border-radius: 3px;
   margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(212,175,55,0.35);
 }
 
 .service-features {
@@ -350,12 +352,12 @@
   font-size: 0.875rem; color: var(--text-secondary);
 }
 .service-features li::before {
-  content: '→'; color: var(--accent);
+  content: 'â†’'; color: var(--accent);
   font-family: 'Space Mono', monospace;
   flex-shrink: 0; margin-top: 1px;
 }
 
-/* ─── ABOUT PAGE ─────────────────────────────────────────────── */
+/* â”€â”€â”€ ABOUT PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .about-intro {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 5rem; align-items: center;
@@ -411,7 +413,7 @@
 .value-item h4 { font-size: 1rem; margin-bottom: 0.4rem; }
 .value-item p { font-size: 0.82rem; }
 
-/* ─── CONTACT PAGE ───────────────────────────────────────────── */
+/* â”€â”€â”€ CONTACT PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .contact-grid {
   display: grid; grid-template-columns: 1fr 1.4fr;
   gap: 4rem; align-items: start;
@@ -422,7 +424,7 @@
 }
 .contact-info-icon {
   width: 44px; height: 44px; flex-shrink: 0;
-  background: rgba(181, 129, 58, 0.1);
+  background: rgba(59, 130, 246, 0.08);
   border: 1px solid var(--border);
   border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
@@ -462,12 +464,12 @@
 }
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(181, 129, 58, 0.12);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
 .form-group textarea { resize: vertical; min-height: 130px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
-/* ─── FEEDBACK PAGE ──────────────────────────────────────────── */
+/* â”€â”€â”€ FEEDBACK PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .feedback-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 1.75rem;
@@ -521,7 +523,7 @@
 }
 .star-btn:hover, .star-btn.active { color: var(--accent); transform: scale(1.1); }
 
-/* ─── Responsive ──────────────────────────────────────────── */
+/* â”€â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { display: none; }
