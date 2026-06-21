@@ -7,7 +7,7 @@ import './styles/pages.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Synapse-Grid-NRI-Support-Service">
       <App />
     </BrowserRouter>
   </React.StrictMode>
